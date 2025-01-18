@@ -1,4 +1,11 @@
 # 📓Chat Gpt for my university text processing final project
+# 🔖
+
+``` 
+do not forget to go into the HuggingChat website and create an account then create a token
+
+```
+
 # ⬛Tech
 - hugchat
 - streamlit
