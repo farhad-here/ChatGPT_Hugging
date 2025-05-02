@@ -28,8 +28,7 @@ else:
               sign.saveCookiesToDir(cookie_path_dir)
 
               # Create your ChatBot
-              cookie_dict = json.loads(st.secrets["COOKIES"])
-              bot = hugchat.ChatBot(cookies=cookie_dict)  
+              bot = hugchat.ChatBot(cookies=cookies.get_dict())
               id = bot.new_conversation()
               bot.change_conversation(id)
 
