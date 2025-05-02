@@ -1,6 +1,7 @@
 import streamlit as st
 from hugchat import hugchat
 from hugchat.login import Login
+import json
 st.set_page_config(page_title="🤗💬 HugChat")
 #title
 st.header('🤗HugChat ChatBot')
@@ -27,7 +28,8 @@ else:
               sign.saveCookiesToDir(cookie_path_dir)
 
               # Create your ChatBot
-              bot = hugchat.ChatBot(cookies=cookies.get_dict())  # or cookie_path="usercookies/<email>.json"
+              cookie_dict = json.loads(st.secrets["COOKIES"])
+              bot = hugchat.ChatBot(cookies=cookie_dict)  
               id = bot.new_conversation()
               bot.change_conversation(id)
 
