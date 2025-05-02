@@ -1,10 +1,12 @@
 # 📓Chat Gpt for my university text processing final project
 # 🤖 ChatGPT with Hugging Face Transformers
-
 This project demonstrates how to build a conversational chatbot using Hugging Face's `transformers` library in Python. It allows you to generate human-like responses from a pretrained model with minimal setup.
-
 ---
 
+# <a href="https://chatgpthugging-ursfhr8uvqrq7k5stffhyc.streamlit.app/">go to the web application</a>
+
+
+---
 ## 🚀 Features
 
 - ✅ Simple chatbot implementation
